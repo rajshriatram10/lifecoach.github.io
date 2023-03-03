@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me! </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="background-color: rgb(239, 236, 232);">
+    <!-- Navbar-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">ALLAN JOHNSON</a> <br>personal life coach</div>
+            <ul class="link">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="About.html">about</a></li>
+                <li class="contact"><a href="About.html">contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+                  
+        </div>
+    </header>
+
+    <!-- About-->
+
+    <h1 class="head">WELCOME!</h1>
+
+    <div class="dis">
+        <div class="dis1">
+            <h2 class="h2">About Me </h2>
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy.</br> Just click “Edit Text” or
+            double
+            click me to add your own content and <br>make changes to the font. Feel free to drag and drop me anywhere
+            you<br> like on your page.
+            This is a great space to write long text about your <br>company and your services. You can use this space to
+            go
+            into a little more<br> detail about your company.Talk about your team and what services you provide.
+        </div>
+        <!--contact-->
+        <div class="dis2">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;Your Name: </span>
+            <input type="text"><br>
+
+            Mobile Number:
+            <input type="text" name="mobile" id=""><br>
+            <span> Email Address:</span>
+            <input type="text" name="" id=""><br>
+            <button class="btn2" style="margin-left: 2px;">Submit</button>
+
+        </div>
+
+    </div>
+    <!--Dropdown Menu-->
+    
+    
+
+
+   <div class="dropdown_menu">
+
+        <li class="home"><a href="index.html">home</a>
+        </li>
+        <li class="about"><a href="About.html">about</a>
+        </li>
+        <li class="contact"><a href="index.html">contact</a>
+        </li>
+    </div>
+
+
+   <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+
+    </script>
+
+    <footer>
+        <div class="footer">
+            Address<br>
+
+            birendranagar,surkhet
+            <br>+91 0987654356
+            <br> abc@gmai.com
+            <div>
+                Home|Blog|Pricing|Faq|Contact
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

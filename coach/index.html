@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>personal life coach</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">ALLAN JOHNSON</a> <br>personal life coach</div>
+            <ul class="link">
+                <li class="home"><a href="index.html">home</a>
+                </li>
+                <li class="about"><a href="About.html">about</a>
+                </li>
+                <li class="contact"><a href="About.html">contact</a>
+                </li>
+
+            </ul>
+            <!--Dropdown Menu-->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+
+            <li class="home"><a href="index.html">home</a>
+            </li>
+            <li class="about"><a href="About.html">about</a>
+            </li>
+            <li class="contact"><a href="About.html">contact</a>
+            </li>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <p>AMBITION IS THE FIRST STEP TOWARDS</p>
+            <h1 style="letter-spacing: 10px; color: azure;">Success</h1>
+            <p>Now Available for Online coaching</p>
+            <button class="btn2"><a href="About.html">Start Now</a> </button>
+        </section>
+    </main>
+    <!--CARD-->
+    <div class="display">
+        <div class="card">
+            <h1 class="heading">Secret Locations</h1>
+            <div> <img src="Logo (1).png" alt="" style="width:12%;"></div>
+
+            <p class="joke" id="joke">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit hic
+                itaque adipisci voluptas quas, modi quia voluptatum dolorum, autem similique.</p>
+            <div style=" padding-top:20px; ">
+
+                <a href="#" style="text-decoration: none; color:red;">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="heading">Safe Adventure</h1>
+            <div> <img src="safeGaurd.png" alt="" style="width:12%"></div>
+
+            <p class="joke" id="joke">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit hic
+                itaque adipisci voluptas quas, modi quia voluptatum dolorum, autem similique.
+            </p>
+
+            <div style=" padding-top:20px; ">
+                <a href="#" style="text-decoration: none; color:red;">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="heading" style="font-size:25px;">professional Hikers</h1>
+            <div> <img src="Professional Hikers.png" alt="" style="width:12%"></div>
+            <p class="joke" id="joke">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit hic
+                itaque adipisci voluptas quas, modi quia voluptatum dolorum, autem similique.
+            </p>
+            <div style=" padding-top:20px; ">
+                <a href="#" style="text-decoration: none; color:red;">Read More...</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+    </script>
+    <footer>
+        <div class="footer">
+            Address<br>
+
+            birendranagar,surkhet
+            <br>+91 0987654356
+            <br> abc@gmai.com
+            <div>
+                Home|Blog|Pricing|Faq|Contact
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
